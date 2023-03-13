@@ -1,0 +1,316 @@
+@font-face {
+    font-family: rubik;
+    src: url('Rubik-VariableFont_wght.ttf');
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    place-content: center;
+    height: 100vh;
+    
+}
+body::after{
+    content: " ";
+    height: 100vh;
+    background-image: url('28719144-86dc0f70-73b1-11e7-911d-60d70fcded21.png');
+    filter: invert(.85);
+    position: absolute;
+width: 100vw;
+z-index: -4;
+
+}
+
+.program {
+    height: 37.734rem;
+    width: 21.344rem;
+    background-color: #2b2b2b;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+header {
+    height: 3rem;
+    background: #1b1c1e;
+    box-shadow: 0px 4px 15px -1px #1b1b1b;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    height: 3rem;
+    align-items: center;
+    margin: 0px 15px;
+    list-style: none;
+}
+
+nav li:nth-child(1) img {
+    height: 1.5rem;
+    mix-blend-mode: lighten;
+}
+
+.admin {
+    width: 5rem;
+    display: flex;
+    justify-content: end;
+    height: 2rem;
+    position: relative;
+}
+
+.user {
+    height: 28.5px;
+    border-radius: 25px;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.search {
+    width: 4rem;
+    background-color: red;
+    position: absolute;
+    height: 1.3rem;
+    top: 4px;
+    left: 12px;
+    border-radius: 25px;
+}
+
+.search img {
+    height: 1rem;
+    position: absolute;
+    top: 2px;
+    left: 5px;
+}
+
+footer {
+    position: absolute;
+    bottom: 0px;
+    width: inherit;
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1b1c1e;
+    box-shadow: 0px -14px 6px 1px #2b2b2b;
+}
+
+footer li {
+    width: 68.3px;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    filter: invert(1);
+    z-index: 3;
+}
+
+footer li.active img {
+    transition: 0.5s;
+    transform: translateY(-25px);
+}
+
+.text {
+    width: 68.3px;
+    height: 3rem;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    font-size: 10px;
+    font-family: rubik;
+    align-items: center;
+    margin-top: 26px;
+    opacity: 0;
+}
+
+footer li.active .text {
+    transition: 0.5s;
+    opacity: 1;
+}
+
+footer li img {
+    mix-blend-mode: color-burn;
+}
+
+
+.active1 {
+    transition: 0.5s;
+    height: 2.1rem;
+    width: 2.1rem;
+    background-color: rgb(250, 25, 25);
+    position: absolute;
+    bottom: 25px;
+    left: 11.2px;
+    border-radius: 52px;
+    border: 7.5px solid #2b2b2b;
+}
+
+.active1::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    height: 15px;
+    width: 15px;
+    left: -21px;
+    border-top-right-radius: 8px;
+    background: transparent;
+    box-shadow: 0px -8px 0 0 #2b2b2b;
+}
+
+.active1::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    height: 15px;
+    width: 15px;
+    right: -21px;
+    border-top-left-radius: 8px;
+    background: transparent;
+    box-shadow: 0px -8px 0 0 #2b2b2b;
+}
+
+footer li:nth-child(1).active~.active1 {
+    transform: translateX(calc(68.3px*0));
+}
+
+footer li:nth-child(2).active~.active1 {
+    transform: translateX(calc(68.3px*1));
+}
+
+footer li:nth-child(3).active~.active1 {
+    transform: translateX(calc(68.3px*2));
+}
+
+footer li:nth-child(4).active~.active1 {
+    transform: translateX(calc(68.3px*3));
+}
+
+footer li:nth-child(5).active~.active1 {
+    transform: translateX(calc(68.3px*4));
+}
+
+
+/* main */
+.container {
+    display: flex;
+    overflow: auto;
+    flex-direction: column;
+    height: 32rem;
+}
+
+.video {
+    display: block;
+    margin: 7px;
+    padding-top: 5px;
+    background-color: #1b1c1e;
+    box-shadow: 0px 10px 10px -7px #110f0f;
+    border-radius: 10px;
+    margin-bottom: 18px;
+}
+
+.thumb {
+    display: grid;
+    place-items: center;
+}
+
+.thumb img {
+    height: 11rem;
+    border-radius: 10px;
+    box-shadow: 0px 10px 8px -3px #110f0f;
+}
+
+.channel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.channel img {
+    height: 2rem;
+    border-radius: 21px;
+}
+
+.videotitle {
+    width: 17rem;
+    font-size: 12px;
+    margin-left: 10px;
+    color: whitesmoke;
+    font-family: rubik;
+}
+
+/* short */
+
+.Short {
+    height: 13rem;
+    background-color: #1b1c1e;
+    box-shadow: 0px 10px 10px -7px #110f0f;
+    display: flex;
+    flex-direction: column;
+    margin: 7px;
+    border-radius: 10px;
+}
+
+.slogo {
+    height: 3rem;
+    display: flex;
+    align-items: center;
+}
+.lg{
+    display: flex;
+    align-items: center;
+    width: 5rem;
+    justify-content: space-evenly;
+    margin-left: 10px;
+    background-color: #1b1b1b;
+    color: whitesmoke;
+    border-radius: 30px;
+    height: 1.5rem;
+    box-shadow: 0px 8px 12px -1px #110f0f;
+    
+}
+.img{
+    height: 18px;
+    width: 18px;
+    background-color: red;
+    mask: url('youtube-shorts-logo-15251.png') center/contain;
+}
+.lg p{
+    font-family: rubik;
+    font-size: 14px;
+    
+}
+.cards{
+    height: 10.5rem;
+    display: flex;
+    width: fit-content;
+}
+.card1{
+    height: 12.5rem;
+    width: 20rem;
+    overflow: scroll;
+}
+
+.shortsvid {
+    overflow: hidden;
+    height: 10rem;
+    width: 7rem;
+    position: relative;
+    border-radius: 7px;
+    margin-left: 10px;
+    background-color: black;
+    box-shadow: 0px 6px 4px -3px #110f0f;
+    font-family: rubik;
+}
+
+.shortsvid img {
+    width: inherit;
+}
+
+.shorttitle {
+    position: absolute;
+    bottom: 0;
+    left: 5px;
+    font-size: 9px;
+    color: whitesmoke;
+}

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>youtubeClone!</title>
+</head>
+
+<body>
+    <section class="program">
+        <header>
+            <nav>
+                <li><img src="yt.jpg" alt=""></li>
+                <li>
+                    <div class="admin">
+                        <div class="search"><img src="search_FILL1_wght600_GRAD0_opsz40.png" alt=""></div>
+                        <div class="user"><img src="menu.png" alt=""></div>
+                    </div>
+                </li>
+            </nav>
+        </header>
+        <main>
+            <div class="container">
+                <div class="video">
+                    <div class="thumb"><img src="videos/thumb1.0.webp" alt=""></div>
+                    <div class="channel"><img src="videos/channels1.jpg" alt="">
+                        <p class="videotitle">How To Create A PortFolio Website Using #HTML And #CSS || HTML & CSS.</p>
+                    </div>
+                </div>
+                <div class="video">
+                    <div class="thumb"><img src="videos/thumb1.webp" alt=""></div>
+                    <div class="channel"><img src="videos/channels1.jpg" alt="">
+                        <p class="videotitle">How To Make A Website With Login And Register | HTML CSS & Javascript</p>
+                    </div>
+                </div>
+                <div class="Short">
+                    <div class="slogo">
+                        <div class="lg">
+                            <img class="img" src="" alt="">
+                            <p>Shorts</p>
+                        </div>
+                    </div>
+                    <div class="card1">
+                    <div class="cards">
+                        <div class="shortsvid">
+                            <img src="videos/shortthumb1.webp" alt="">
+                            <p class="shorttitle">CSS Most Asked Interview Question<br>@heysandip</p>
+                        </div>
+                        <div class="shortsvid">
+                            <img src="videos/shortthumb2.webp" alt="">
+                            <p class="shorttitle">Can You Draw this Amazing Design 🤔 Python Turtle<br>@theTechnology</p>
+                        </div>
+                        <div class="shortsvid">
+                            <img src="videos/shortthumb3.webp" alt="">
+                            <p class="shorttitle">Top 4 Best Low End PC Games #CSGO #battlefield<br>JKTHECREATOR</p>
+                        </div>
+                        <div class="shortsvid">
+                            <img src="videos/shortthumb4.webp" alt="">
+                            <p class="shorttitle">Four Things I Hate in Windows 11 #win11 #win10<br>JKTHECREATOR</p>
+                        </div>
+                        <div class="shortsvid">
+                            <img src="videos/shortthumb5.webp" alt="">
+                            <p class="shorttitle">CONVERT DOCUMENTS TO PDF WITHOUT ANY APPLICATION OR ONLINE SERVICES<br>JKTHECREATOR</p>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="video">
+                    <div class="thumb"><img src="videos/thumb2.webp" alt=""></div>
+                    <div class="channel"><img src="videos/channels3.jpg" alt="">
+                        <p class="videotitle">⚡Win 11 Task Bar,Start Menu For Win 10 #win11#win10 #windows11#start11crack #taskbar #start1</p>
+                    </div>
+                </div>
+                <div class="video">
+                    <div class="thumb"><img src="videos/thumb3.webp" alt=""></div>
+                    <div class="channel"><img src="videos/channels3.jpg" alt="">
+                        <p class="videotitle">windows 11 Rounded Edges for Windows 10😱😱 Make Windows 10 look like windows 11 #howto</p>
+                    </div>
+                </div>
+                <div class="video">
+                    <div class="thumb"><img src="videos/thumb4.webp" alt=""></div>
+                    <div class="channel"><img src="videos/channels3.jpg" alt="">
+                        <p class="videotitle">What is OOPS Concept? Know in RamPothineni Style#THUGLIFE #Shorts #short #youtube_short #short_video</p>
+                    </div>
+                </div>
+                <div class="video">
+                    <div class="thumb"><img src="videos/thumb5.webp" alt=""></div>
+                    <div class="channel"><img src="videos/channels3.jpg" alt="">
+                        <p class="videotitle">🔥🔥2022 Gaming Pc Build under ₹25,000/- | Amd pc build | best pc build |#pcbuild #pcbuildindia #ryzen</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <li class="tab active"><img src="home_FILL1_wght600_GRAD0_opsz40.png" height="28px" alt="">
+                <p class="text">Home</p>
+            </li>
+            <li class="tab "><img src="youtube-shorts-logo-15251.png" height="22px" alt="">
+                <p class="text">Shorts</p>
+            </li>
+            <li class="tab "><img src="add_circle_FILL1_wght500_GRAD200_opsz48.png" height="27px" alt="">
+                <p class="text">Create</p>
+            </li>
+            <li class="tab "><img src="subscriptions_FILL1_wght300_GRAD200_opsz48.png" height="25px" alt="">
+                <p class="text">Subscriptions</p>
+            </li>
+            <li class="tab "><img src="video_library_FILL1_wght300_GRAD200_opsz48.png" height="25px" alt="">
+                <p class="text">Library</p>
+            </li>
+            <div class="active1"><div class="circle"></div></div>
+        </footer>
+    </section>
+    <script>
+        const list = document.querySelectorAll('.tab');
+        function activelink() {
+            list.forEach((item) =>
+                item.classList.remove('active'));
+            this.classList.add('active');
+        }
+        list.forEach((item) =>
+            item.addEventListener('click', activelink));
+    </script>
+</body>
+
+</html>
